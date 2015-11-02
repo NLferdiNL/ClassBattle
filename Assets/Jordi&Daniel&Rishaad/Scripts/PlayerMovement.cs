@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (Input.GetKey(KeyCode.D))                //Strafe Right
         {
-            transform.Translate(-Vector3.left * Time.deltaTime * _speed);
+            transform.Translate(Vector3.right * Time.deltaTime * _speed);
         }
 
         DoubleJump();
